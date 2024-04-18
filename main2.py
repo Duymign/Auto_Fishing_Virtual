@@ -62,13 +62,13 @@ def perform_action():
     retry_delay = random.uniform(7, 9)
 
     # Di chuyển chuột đến vị trí cụ thể và thực hiện click
-    x = random.uniform(1200, 1220)
-    y = random.uniform(689, 705)
+    x = random.uniform(1235, 1245)
+    y = random.uniform(695, 715)
     pyautogui.click(x, y, duration=click_delay)
     time.sleep(action_delay)
     action_delay = random.uniform(0.3, 0.5)
     x = random.uniform(950, 980)
-    y = random.uniform(689, 705)
+    y = random.uniform(695, 715)
     click_delay = random.uniform(0.7, 2.5)
     pyautogui.click(x, y, duration=click_delay)
     time.sleep(retry_delay)
@@ -85,7 +85,7 @@ while True:
     else:
         if(counter > 100):
             
-            pyautogui.click(x=1220, y=1020)
+            pyautogui.click(x=925, y=689)
             counter = 0
             
         else:
